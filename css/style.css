@@ -14,14 +14,20 @@ body {
 }
 #viewer-2d-container {
   position: absolute;
+  right: 0px;
   bottom: 20px;
-  left: 20px;
-  width: 400px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
+  padding: 10px;
   background-color: transparent;
 }
 #viewer-2d {
   height: 100%;
+  background-color:rgba(252, 252, 252, 0.9);
+  border: 1px solid #eef0f1;
+}
+#viewer-2d .bs-viewer2d {
+  background:transparent;
 }
 #viewer-container {
   position: absolute;
