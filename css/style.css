@@ -1,0 +1,61 @@
+@import 'reset/reeeset.min.css';
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+#documentation {
+    z-index: 1010;
+    top: 0;
+    left: 0;
+    padding: 10px 10px 4px 10px;
+    border-radius: 0 0 8px 0;
+    position: fixed;
+    background-color: #2E3336;
+}
+#viewer-2d-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 400px;
+  height: 250px;
+  background-color: transparent;
+}
+#viewer-2d {
+  height: 100%;
+}
+#viewer-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+}
+#viewer {
+  height: 100%;
+}
+
+#navigation {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  bottom: 0;
+  top:0;
+  overflow: auto;
+}
+
+.help-item {
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.help-item .command {
+  white-space: nowrap;
+  margin-right: -1px;
+  margin-left: 10px;
+  padding: 1px 10px;
+  border: 1px solid #4E98F7;
+  border-radius: 10px;
+  color: #4E98F7;
+}
