@@ -66,6 +66,15 @@ $(function() {
     console.log('Viewer loaded!');
     $('#viewer-container').focus();
     viewer.viewer('clippingPlaneWidgetViewport',
-    {x: 0, y: 300, width: 150, height: 150});
+    {x: 0, y: 0, width: 150, height: 150});
+    viewer.viewerUI('setSpaces', spaces);
+  });
+
+  $( '#spaces-toggle' ).click(function() {
+    viewer.viewerUI('setSpacesVisible', this.checked);
+  });
+
+  $( '#2D-toggle' ).click(function() {
+    $( '#viewer-2d-container' ).toggle(this.checked);
   });
 });

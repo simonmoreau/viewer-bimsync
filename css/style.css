@@ -1,4 +1,6 @@
 @import 'reset/reeeset.min.css';
+
+
 body {
   font-family: Arial;
   font-size: 14px;
@@ -64,4 +66,130 @@ body {
   border: 1px solid #4E98F7;
   border-radius: 10px;
   color: #4E98F7;
+}
+
+.bs-dropup-list,
+#context-menu-2 .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  font-family: inherit;
+}
+
+#context-menu-2 ul {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+#context-menu-2 ul {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.bs-dropup-list > li > a,
+#context-menu-2 .dropdown-menu > li {
+  display: block;
+  padding: 6px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.bs-dropup-list > li > a:hover,
+#context-menu-2 .dropdown-menu > li > a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.bs-dropup-list > li,
+#context-menu-2 .dropdown-menu > li {
+  cursor: pointer;
+}
+
+#context-menu-2 .bs-dropup-list > li.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.bs-dropup-list > .disabled > a,
+.bs-dropup-list > .disabled > a:focus,
+.bs-dropup-list > .disabled > a:hover,
+#context-menu-2 .dropdown-menu > .disabled > a,
+#context-menu-2 .dropdown-menu > .disabled > a:focus,
+#context-menu-2 .dropdown-menu > .disabled > a:hover {
+  color: #777;
+}
+
+.bs-dropup-list .divider,
+#context-menu-2 .dropdown-menu .divider {
+  height: 1px;
+  margin: 5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+#context-menu-2 .float-right {
+  float: right;
+}
+
+#context-menu-2 .float-left {
+  float: left;
+}
+
+#context-menu-2 .clear {
+  clear: both;
+}
+
+#context-menu-2 .muted {
+  color: #777;
+}
+
+button.close {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  color: #333;
+  background-color: rgba(255,255,255,0.8);
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  font-size: inherit;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0px;
+}
+
+button.close:hover {
+  background-color: #f2f5f8;
 }
